@@ -32,6 +32,15 @@
 # 
 ###############################################################################
 
+
+#' Pull Movie Data
+#' 
+#' 
+#' @return data.frame
+#' @keywords data
+#' @export
+#'
+
 mojo <- function(start = "2013-05-01") {
   # Load packages needed in this function.
   library(XML)
