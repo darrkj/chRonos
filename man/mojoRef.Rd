@@ -5,7 +5,7 @@
   mojoRef()
 }
 \value{
-  side effect, plot
+  data.frame
 }
 \description{
   movie refresh

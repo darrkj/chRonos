@@ -32,15 +32,6 @@
 # 
 ###############################################################################
 
-#' Pull mojo data
-#' 
-#' @param start The data to start the pull on
-#' @return data.frame
-#' @keywords data
-#' @export
-#' 
-
-
 mojo <- function(start = "2013-05-01") {
   # Load packages needed in this function.
   library(XML)
