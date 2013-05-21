@@ -31,6 +31,16 @@
 # those names to the init dataframe preallocation code.
 # 
 ###############################################################################
+
+#' Pull mojo data
+#' 
+#' @param start The data to start the pull on
+#' @return data.frame
+#' @keywords data
+#' @export
+#' 
+
+
 mojo <- function(start = "2013-05-01") {
   # Load packages needed in this function.
   library(XML)
@@ -101,12 +111,14 @@ mojo <- function(start = "2013-05-01") {
 #' movie refresh
 #' 
 #' 
-#' @return side effect, plot
+#' @return data.frame
 #' @keywords data
 #' @export
 #' 
 
 mojoRef <- function() {
+  library(chRonos)
+  data(mvData)
   # Start from the day after that most recent day.
   start <- max(mvData$date) + 1
   # Remove this data.
