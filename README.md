@@ -2,7 +2,7 @@ chRonos
 ========================================================
 
 
-![alt text](http://example.com/logo.png)
+![alt text](oscar.jpg)
 
 
 Add descriptions of project here.
