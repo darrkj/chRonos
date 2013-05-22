@@ -53,7 +53,7 @@ mojo <- function(start = "2013-05-01") {
   # This is the point in time to start pulling from.
   start <- as.Date(start)
   # Check to make sure there are days to grab data from.
-  stopifnot(start < finish - 4)
+  stopifnot(start < finish)
 
   # Source where data comes from.  
   api <- "http://www.boxofficemojo.com/daily/chart/?view=1day&sortdate="
