@@ -78,8 +78,8 @@ mojo <- function(start = "2013-05-01") {
   rm(mList, finish, site, start, api, g)
     
   # Rename varaibles to have more meaning. 
-  names(mvData) <- c("td", "yd", "name", "studio", "daily", "peru", 
-                     "perd", "Theaters", "Avg", "Gross", "Day", "date")
+  names(mvData) <- c("date", "td", "yd", "name", "studio", "daily", "peru", 
+                     "perd", "Theaters", "Avg", "Gross", "Day")
     
   # Add weekday variable
   mvData$weekday <- wday(mvData$date, label = TRUE)
