@@ -16,3 +16,5 @@ Depends:
 LinkingTo: Rcpp
 Collate:
     'boxOfficeMojo.R'
+    'scores.R'
+    'utils.R'
