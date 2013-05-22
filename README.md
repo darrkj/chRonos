@@ -5,6 +5,7 @@ chRonos
 ![alt text](oscar.jpg)
 
 
-Add descriptions of project here.
+Some code to pull data related to movies and the start
+of some code to buils some temporal models around it.
 
 
