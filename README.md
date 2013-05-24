@@ -2,7 +2,7 @@ chRonos
 ========================================================
 
 
-![alt text](oscar.jpg)
+![alt text](resource/oscar.jpg)
 
 
 Some code to pull data related to movies and the start
