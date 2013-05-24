@@ -3,7 +3,6 @@
 # boxOfficeMojo.R
 #
 # Author - Kenny Darrell
-# email - darrell@datamininglab.com
 #
 # Purpose - This is a function that can be used to 
 # pull data from the boxofficemojo.com website.  It
@@ -38,7 +37,6 @@
 #' 
 #' @return data.frame
 #' @keywords data
-#' @export
 #'
 
 mojo <- function(start = "2013-05-01") {
