@@ -56,7 +56,7 @@ paa <- function(sts, n = 10) {
   # This will find the number of obs in order to have n groups. 
   grp <- length(l) / n
   # This creates an index for the ts of which group the obs belongs to.
-  fac <- floor((l / grp) - .0001)
+  fac <- floor(l / grp)
   # Split the original ts into these groups.
   pa <- split(sts, fac)
   # Find the mean for each group.
