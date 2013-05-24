@@ -6,3 +6,5 @@
 *.dll
 *.Rproj
 Makevars
+README.Rmd
+README.html
