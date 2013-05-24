@@ -34,16 +34,24 @@
 #' z.Date <- as.Date("2013-04-20") + 1:500
 #' a.Date <- zoo(runif(500, 0, 60), z.Date)
 #' cal.heatMap(a.Date)
-#' TODO: cal.heatMap: make generic function s3 dispatch
 
-cal.heatMap <- function(ts, col = "x") {
-  if (class(ts) == 'Date') {
-    ts <- count.Date(x.Date)
-  } else if (class(ts) == 'zoo') {
-    ts <- ts[, col] 
-    ts <- as.data.frame(list(Date = time(ts), value = ts), 
-                        row.names = 1:length(ts))
-  }
+cal.heatMap <- function(x, ...) {
+  UseMethod("cal.heatMap", x)
+}
+
+cal.heatMap.Date <- function(ts) {
+  ts <- count.Date(x.Date)
+  calheat(ts)
+}
+
+cal.heatMap.zoo <- function(ts, col = "x") {
+  ts <- ts[, col] 
+  ts <- as.data.frame(list(Date = time(ts), value = ts), 
+                      row.names = 1:length(ts))
+  calheat(ts)
+}
+
+calheat <- function(ts) {
   ts <- merge(allDates, ts, by = "Date", all.y = TRUE)
   ggplot(ts, aes(monthweek, weekdayf, fill = value)) +
     geom_tile(colour = "white") + 
