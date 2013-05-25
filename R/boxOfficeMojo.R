@@ -37,6 +37,7 @@
 #' 
 #' @return data.frame
 #' @keywords data
+#' @export
 #'
 
 mojo <- function(start = "2013-05-01") {
