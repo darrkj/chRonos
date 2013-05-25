@@ -9,9 +9,6 @@ Description: A start at grouping some functionality together.
 License: What license is it under?
 Depends:
     plyr,
-    devtools,
-    xts,
-    manipulate,
     lubridate
 LinkingTo: Rcpp
 Collate:
