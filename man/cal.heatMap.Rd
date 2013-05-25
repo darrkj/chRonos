@@ -2,7 +2,7 @@
 \alias{cal.heatMap}
 \title{Calandar Heat Map}
 \usage{
-  cal.heatMap(ts, col = "x")
+  cal.heatMap(x, ...)
 }
 \arguments{
   \item{data}{The time info of time data}
@@ -30,7 +30,6 @@ Example of using th evalue of a time series
 z.Date <- as.Date("2013-04-20") + 1:500
 a.Date <- zoo(runif(500, 0, 60), z.Date)
 cal.heatMap(a.Date)
-TODO: cal.heatMap: make generic function s3 dispatch
 }
 \author{
   Kenny Darrell

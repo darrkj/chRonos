@@ -21,3 +21,4 @@ Collate:
     'RcppExports.R'
     'sax.R'
     'calendarHeat.R'
+    'schema.R'
