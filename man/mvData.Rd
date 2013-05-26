@@ -1,9 +1,9 @@
 \docType{data}
 \name{mvData}
 \alias{mvData}
-\title{Movie Data}
+\title{Box Office Mojo Data}
 \description{
-  Movie Data
+  Box Office Mojo Data
 }
 \keyword{datasets}
 

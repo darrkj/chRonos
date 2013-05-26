@@ -1,6 +1,6 @@
 \name{mojoRef}
 \alias{mojoRef}
-\title{movie refresh}
+\title{Box office mojo refresh}
 \usage{
   mojoRef()
 }
@@ -8,7 +8,7 @@
   data.frame
 }
 \description{
-  movie refresh
+  Box office mojo refresh
 }
 \keyword{data}
 
