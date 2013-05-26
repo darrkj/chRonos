@@ -9,7 +9,8 @@ Description: A start at grouping some functionality together.
 License: What license is it under?
 Depends:
     plyr,
-    lubridate
+    lubridate,
+    xts
 LinkingTo: Rcpp
 Collate:
     'boxOfficeMojo.R'
