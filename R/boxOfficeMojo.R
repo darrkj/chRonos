@@ -107,7 +107,7 @@ mojo <- function(start = "2013-05-01") {
   return(mvData)
 }
 
-#' movie refresh
+#' Box office mojo refresh
 #' 
 #' 
 #' @return data.frame
@@ -125,7 +125,7 @@ mojoRef <- function() {
 }
 
 
-#' Movie Data
+#' Box Office Mojo Data
 #'
 #' @docType data
 #' @name mvData
