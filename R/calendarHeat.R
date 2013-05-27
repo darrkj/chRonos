@@ -39,10 +39,24 @@ cal.heatMap <- function(x, ...) {
   UseMethod("cal.heatMap", x)
 }
 
+#' Date version of cal.heatMap
+#' 
+#' @author Kenny Darrell
+#' @param data The time info of time data
+#' @keywords graphics timeseries
+#' @export
+
 cal.heatMap.Date <- function(ts) {
   ts <- count.Date(x.Date)
   calheat(ts)
 }
+
+#' Date version of cal.heatMap
+#' 
+#' @author Kenny Darrell
+#' @param data The time info of time data
+#' @keywords graphics timeseries
+#' @export
 
 cal.heatMap.zoo <- function(ts, col = "x") {
   ts <- ts[, col] 
