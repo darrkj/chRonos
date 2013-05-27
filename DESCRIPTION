@@ -10,7 +10,8 @@ License: What license is it under?
 Depends:
     plyr,
     lubridate,
-    xts
+    xts,
+    ggplot2
 LinkingTo: Rcpp
 Collate:
     'boxOfficeMojo.R'
