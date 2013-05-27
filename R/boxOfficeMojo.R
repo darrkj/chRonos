@@ -77,7 +77,7 @@ mojo <- function(start = "2013-05-01") {
   rm(mList, finish, site, start, api, g)
     
   # Rename varaibles to have more meaning. 
-  names(mvData) <- c("date", "td", "yd", "name", "studio", "daily", "peru", 
+  names(mvData) <- c("date", "td", "yd", "name", "studio", "Daily", "peru", 
                      "perd", "Theaters", "Avg", "Gross", "Day")
     
   # Add weekday variable
@@ -100,6 +100,8 @@ mojo <- function(start = "2013-05-01") {
   suppressWarnings({ 
     mvData$peru <- mojoClean(mvData$peru) / 100 
     mvData$perd <- mojoClean(mvData$perd) / 100
+    mvData$td   <- mojoClean(mvData$td)
+    mvData$yd   <- mojoClean(mvData$yd)
   }) 
     
   # Order name then day into its showing.
